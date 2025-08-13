@@ -20,7 +20,7 @@ app.use(express.json());
 processWebhookData();
 
 app.use(cors({
-  origin: "https://whatsapp-clone-app-pnfl.vercel.app",  // frontend URL
+  origin: "https://whatsapp-clone-app-zuu8.vercel.app/",  // frontend URL
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
