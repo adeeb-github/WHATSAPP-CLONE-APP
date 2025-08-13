@@ -20,9 +20,9 @@ app.use(express.json());
 processWebhookData();
 
 app.use(cors({
-  origin: "http://localhost:3000",  // frontend URL
+  origin: "*",  // frontend URL
   methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
+  credentials: false
 }));
 
 // Routes
