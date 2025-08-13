@@ -1,8 +1,6 @@
-# 📱 WhatsApp Web Clone (Backend)
-
-A **WhatsApp Web-like chat interface** that displays **real-time conversations** using **webhook data**.  
-The backend is built with **Node.js, Express, MongoDB, and Mongoose**, and processes incoming **WhatsApp Webhook payloads** to store and update chats.
-
+# 📱 WhatsApp Web Clone App
+A WhatsApp Web Clone built using MERN Stack with real-time chat features, WebSockets, and MongoDB.
+It processes WhatsApp webhook JSON payloads, stores messages in MongoDB, and displays them in a chat UI.
 ---
 
 ## 🚀 Features
@@ -16,12 +14,28 @@ The backend is built with **Node.js, Express, MongoDB, and Mongoose**, and proce
 ---
 
 ## 🛠 Tech Stack
-- **Node.js** – Backend runtime
-- **Express.js** – Web framework
-- **MongoDB + Mongoose** – Database & ODM
-- **dotenv** – Environment variable management
-- **CORS** – Cross-Origin Resource Sharing
-- **fs / path** – File system utilities
+Frontend
+
+React
+
+Tailwind CSS
+
+Axios
+
+Socket.io Client
+
+Backend
+
+Node.js
+
+Express.js
+
+MongoDB + Mongoose
+
+Socket.io
+
+dotenv, cors
+
 
 ---
 
