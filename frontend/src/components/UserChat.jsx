@@ -12,7 +12,7 @@ const UserChat = () => {
     if (!wa_id) return;
 
     // Fetch messages
-    axios.get(`http://localhost:4000/api/messages/${wa_id}`)
+    axios.get(`https://whatsapp-clone-app-n1gw.onrender.com/api/messages/${wa_id}`)
       .then((res) => {
         setMessages(res.data.data);
       })
@@ -21,7 +21,7 @@ const UserChat = () => {
       });
 
     // Fetch user details
-    axios.get(`http://localhost:4000/api/users/${wa_id}`)
+    axios.get(`https://whatsapp-clone-app-n1gw.onrender.com/api/users/${wa_id}`)
       .then((res) => {
         setUserDetails(res.data.data); // Make sure API returns { name, phone }
       })
@@ -33,7 +33,7 @@ const UserChat = () => {
 const handleSend = () => {
   if (!newMessage.trim()) return;
 
-  axios.post(`http://localhost:4000/api/addmessage`, {
+  axios.post(`https://whatsapp-clone-app-n1gw.onrender.com/api/addmessage`, {
     wa_id,
     text: newMessage,
     from: "business",
