@@ -8,12 +8,12 @@ const UsersList = () => {
   const outlet = useOutlet(); // 👈 to check if a child route is active
 
  useEffect(() => {
-    axios.get("http://localhost:4000/api/users")
+    axios.get("https://whatsapp-clone-app-n1gw.onrender.com/api/users")
       .then((res) => {
         setUsers(res.data.data);
         // Fetch last message for each user
         res.data.data.forEach(user => {
-          axios.get(`http://localhost:4000/api/messages/latest/${user.wa_id}`)
+          axios.get(`https://whatsapp-clone-app-n1gw.onrender.com/api/messages/latest/${user.wa_id}`)
             .then(res => {
               setLastMessages(prev => ({
                 ...prev,
