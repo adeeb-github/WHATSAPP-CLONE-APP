@@ -41,20 +41,22 @@ dotenv, cors
 
 ## 📂 Project Structure
 
-backend/
-│── config/
-│ └── db.js # MongoDB connection
-│── models/
-│ ├── user.js # User schema
-│ └── message.js # Message schema
-│── routes/
-│ └── userRoute.js # API routes
-│── utils/
-│ └── processWebhook.js # Webhook payload processing logic
-│── data/ # Incoming webhook JSON payloads
-│── index.js # App entry point
-│── package.json
-│── .env
+WHATSAPP-CLONE-APP/
+│
+├── backend/           # Backend code (Express + MongoDB)
+│   ├── config/
+│   ├── models/
+│   ├── routes/
+│   ├── utils/
+│   ├── .env
+│   ├── package.json
+│
+├── frontend/          # Frontend code (React)
+│   ├── public/
+│   ├── src/
+│   ├── package.json
+│
+└── README.md
 
 
 ## ⚙️ Installation & Setup
