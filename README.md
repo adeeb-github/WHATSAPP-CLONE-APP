@@ -45,19 +45,18 @@ backend/
 
 ## ⚙️ Installation & Setup
 
-### 1️⃣ Clone the repository
+### 1️ Clone the repository
 
-git clone https://github.com/your-username/whatsapp-web-clone-backend.git
-cd whatsapp-web-clone-backend
-
-### Install dependencies
+git clone https://github.com/adeeb-github/WHATSAPP-CLONE-APP.git
+cd WHATSAPP-CLONE-APP
+### 2 Install dependencies
 
 npm install
 
-### Run the server
+### 3 Run the server
 
 npm start
-### API Endpoints
+### 4 API Endpoints
 
 | Method | Endpoint               | Description             |
 | ------ | ---------------------- | ----------------------- |
@@ -65,7 +64,7 @@ npm start
 | GET    | `/api/messages/:wa_id` | Get messages for a user |
 | POST   | `/api/messages`        | Create a new message    |
 
-### Webhook Data Processing
+### 5 Webhook Data Processing
 
 Place your .json payloads inside the data/ folder.
 
@@ -79,11 +78,11 @@ Insert/update messages with their latest statuses.
 
 Messages are stored in the messages collection (or processed_messages if renamed).
 
-### CORS Setup
+### 6 CORS Setup
 
 app.use(cors({ origin: "*", methods: ["GET", "POST", "PUT", "DELETE"] }));
 
-### Future Improvements
+###  Future Improvements
 
 Real-time updates via WebSockets
 
