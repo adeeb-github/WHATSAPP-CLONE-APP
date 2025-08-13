@@ -4,7 +4,7 @@ require('dotenv').config();
 
 
 exports.connect=()=>{
-    mongoose.connect("mongodb://localhost:27017/whatsapp",{
+    mongoose.connect("mongodb+srv://mohdadeeb409:DFrApmSwfE25sLh8@cluster0.ogto8hm.mongodb.net/whatsapp?retryWrites=true&w=majority&appName=Cluster0",{
         useNewUrlParser: true,
         useUnifiedTopology: true
     }).then(()=>{
